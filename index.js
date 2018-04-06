@@ -59,6 +59,9 @@ var SendIntentAndroid = {
     openMapsWithRoute(query, mode) {
         RNSendIntentAndroid.openMapsWithRoute(query, mode);
     },
+    openNavigationMaps(from, to) {
+        RNSendIntentAndroid.openNavigationMaps(from, to);
+    },
     shareTextToLine(options: Object) {
         RNSendIntentAndroid.shareTextToLine(options);
     },
