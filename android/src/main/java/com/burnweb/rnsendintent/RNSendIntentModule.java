@@ -385,7 +385,7 @@ public class RNSendIntentModule extends ReactContextBaseJavaModule {
         Uri gmmIntentUri = Uri.parse("https://www.google.com/maps/dir/?api=1&origin=" + from + "&destination=" + to + "&dir_action=navigate");
 
         Intent sendIntent = new Intent(android.content.Intent.ACTION_VIEW, gmmIntentUri);
-        mapIntent.setPackage("com.google.android.apps.maps");
+        sendIntent.setPackage("com.google.android.apps.maps");
         sendIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 
         // Check that an app exists to receive the intent
